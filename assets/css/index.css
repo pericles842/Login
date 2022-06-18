@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;;
+    color: #f1f1f1;
+}
+.box{
+    background-color: #252525 ;
+    margin: 70px 30% ;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 7px 7px #00000071;
+}
+.words{
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+h1{
+    color:   #f14aab ;
+    padding: 0px 0px 30px 0px;
+}
+.box-flex {
+    justify-content: center;
+    display: flex;
+}
+.o{
+    padding: 0px 5px;
+}
+@media screen and (max-width: 800px) {
+    .box{
+        background-color: #252525 ;
+        margin: 70px 10% ;
+        padding: 50px;
+        border-radius: 5px;
+    }
+    .words{
+        text-align: center;
+        font-size: 15px;
+    }
+}
