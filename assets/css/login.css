@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --black-font:#0e0e0e;
+    --black-box:#252525;
+    --white-font:#fbfbfb;
+    --white-box:#f0f0f0;
+    --purple-font:#f14aab;
+}
+/*windows one */
+.words{
+    font-size: 15px;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 4px 4px 10px #00000039;
+    background-color:var(--white-font) ;
+    color: var(--black-font);
+
+}
+.words h1{
+    font-size: 30px;
+    padding: 30px 0px 40px 0px;
+}
+.box-login{
+    display: flex;
+    margin: 10%  30%;
+}
+.inputs-loguin{
+    display: block;
+}
+/*windows two */
+.box-inputs-loguin{
+    padding: 40px;
+    text-align: center;
+    background-color: var(--black-box);
+}
+.box-inputs-loguin p {
+    margin: 20px 0px 0px 0px;
+    text-align: left;
+    color: var(--white-font);
+}
+input{
+    caret-color: #ffffff;
+}
+input::placeholder{
+    color: #ffffff85;
+}
+.inputs-loguin input[type="text"], input[type="password"]{
+    color: var(--white-font);
+    background-color: var(--black-box);
+    border: none;
+    padding: 5px;
+    outline:none;
+    border-bottom: 1px solid #f14aab;
+}
+.inputs-loguin input[type="submit"]{
+    color: var(--white-box);
+    background-color: var(--purple-font);
+    border-radius: 1px;
+    border: none;
+    padding: 5px 0px;
+    width: 200px;
+    margin: 30px 0px 0px 0px;
+}
+.inputs-loguin  input[type="submit"]:hover{
+    background-color: #d0338e;
+}
+@media screen and (max-width: 800px) {
+    .box-login{
+        display:block;
+        margin:auto;
+    }
+}
