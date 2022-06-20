@@ -12,6 +12,7 @@
 
 </head>
 <body>
+    <?php require 'partials/header.php'?>
     <div class="box">
         <div class="words">
             <h1>Bienvenido a mi App</h1>

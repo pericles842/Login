@@ -11,6 +11,7 @@
     <link rel="preconet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap" >
 </head>
 <body>
+<?php require 'partials/header.php'?>
     <div class="box-login">
         <div class="words">
             <h1>Iniciar Sesion</h1>
@@ -18,7 +19,7 @@
             y disfruta la experiencia app </p>
         </div>
         <div class="box-inputs-loguin">
-            <form>
+            <form action="login.php" method="post">
                 <div class="inputs-loguin">
                     <p>Usuario</p>
                     <input type="text" placeholder="Ingresar usuario ">

@@ -1,3 +1,4 @@
+<?php require 'database.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,7 @@
     <link rel="preconet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap" >
 </head>
 <body>
+<?php require 'partials/header.php'?>
     <div class="box-flex">
         <div class="words">
             <h1>Crear Cuenta</h1>
@@ -18,10 +20,10 @@
             tus datos en la nube, e iniciar la experiencia App </p>
         </div>
         <div class="box-inputs-loguin">
-            <form>
+            <form action="singup.php" method="post">
                 <div class="inputs-loguin">
                     <p>Correo</p>
-                    <input type="email" >
+                    <input type="email">
                     <p>Usuario</p>
                     <input type="text">
                     <p>Contraseña</p>
