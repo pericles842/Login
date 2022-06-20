@@ -16,29 +16,26 @@ body {
     --white-box:#f0f0f0;
     --purple-font:#f14aab;
 }
-/*windows one */
+.box-flex{
+    display: flex;
+    margin: 13%  30%;
+}
 .words{
     font-size: 15px;
     padding: 30px 30px 30px 30px;
     box-shadow: 4px 4px 10px #00000039;
     background-color:var(--white-font) ;
     color: var(--black-font);
-
 }
 .words h1{
     font-size: 30px;
     padding: 30px 0px 40px 0px;
 }
-.box-login{
-    display: flex;
-    margin: 15%  30%;
-}
 .inputs-loguin{
     display: block;
 }
-/*windows two */
 .box-inputs-loguin{
-    padding: 40px;
+    padding: 40px 25px;
     text-align: center;
     background-color: var(--black-box);
 }
@@ -53,7 +50,7 @@ input{
 input::placeholder{
     color: #ffffff85;
 }
-.inputs-loguin input[type="text"], input[type="password"]{
+.inputs-loguin input[type="text"], input[type="password"],input[type="email"]{
     color: var(--white-font);
     background-color: var(--black-box);
     border: none;
@@ -74,8 +71,8 @@ input::placeholder{
     background-color: #d0338e;
 }
 @media screen and (max-width: 800px) {
-    .box-login{
-        display:block;
+    .box-flex{
+        display:inline-block;
         margin:auto;
     }
 }

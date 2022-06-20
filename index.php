@@ -21,7 +21,7 @@
                 <p class="o">
                     or
                 </p>
-                <a href="singup.php">regístrate</a>
+                <a href="singup.php">Regístrate</a>
             </div>
         </div>
     </div>

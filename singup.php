@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrate</title>
      <!-- Styles-->
-    <link rel="stylesheet" href="assets/css/singup.css">
+    <link rel="stylesheet" href="assets/css/sing.css">
     <!-- Fonts-->
     <link rel="preconet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap" >
 </head>
