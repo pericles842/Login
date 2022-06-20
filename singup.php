@@ -11,9 +11,9 @@
        $stmt->bindParam(':password', $password);
    
        if ($stmt->execute()) {
-         $message = 'Successfully created new user';
+         $message = 'Usuario creado exitosamente';
        } else {
-         $message = 'Sorry there must have been an issue creating your account';
+         $message = 'Hubo un problema a crear la cuenta';
        }
      }
 ?>
@@ -31,6 +31,9 @@
 </head>
 <body>
 <?php require 'partials/header.php'?>
+    <?php if (!empty($message)):?>
+        <p><?php $message?></p>
+    <?php endif; ?>
     <div class="box-flex">
         <div class="words">
             <h1>Crear Cuenta</h1>
