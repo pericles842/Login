@@ -1,4 +1,22 @@
-<?php require 'database.php'?>
+<?php
+     require 'database.php';
+
+     $message = '';
+   
+     if (!empty($_POST['email']) && !empty($_POST['password'])) {
+       $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+       $stmt = $conn->prepare($sql);
+       $stmt->bindParam(':email', $_POST['email']);
+       $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+       $stmt->bindParam(':password', $password);
+   
+       if ($stmt->execute()) {
+         $message = 'Successfully created new user';
+       } else {
+         $message = 'Sorry there must have been an issue creating your account';
+       }
+     }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,12 +40,10 @@
         <div class="box-inputs-loguin">
             <form action="singup.php" method="post">
                 <div class="inputs-loguin">
-                    <p>Correo</p>
-                    <input type="email">
                     <p>Usuario</p>
-                    <input type="text">
+                    <input type="text" name="email">
                     <p>Contraseña</p>
-                    <input type="password">
+                    <input type="password"name="password">
                     <input type="submit" value="Enviar">
                 </div>
             </form>
